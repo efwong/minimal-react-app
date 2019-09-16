@@ -7,8 +7,6 @@ const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
 	entry: './src/index.tsx',
 	output: {
-		// filename: 'bundle.js',
-		// path: __dirname + '/dist'
 		filename: '[name].[chunkhash].js',
 		path: path.resolve(__dirname, 'dist')
 	},
@@ -30,8 +28,7 @@ module.exports = {
 		extensions: ['.ts', '.tsx', '.js', '.json']
 	},
 	module: {
-		rules: [
-			{
+		rules: [{
 				test: /\.tsx?$/, ///\.(ts|tsx)$/,
 				loader: 'awesome-typescript-loader',
 				exclude: /node_modules/
@@ -43,8 +40,7 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [
-					{
+				use: [{
 						loader: MiniCssExtractPlugin.loader
 						// options: {
 						// 	// you can specify a publicPath here

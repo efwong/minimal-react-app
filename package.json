@@ -6,16 +6,20 @@
 	"scripts": {
 		"build": "rm -rf dist && SET NODE_ENV=production && webpack --mode production",
 		"serve": "webpack",
-		"start": "webpack-dev-server --open --mode production",
+		"start": "webpack-dev-server --open",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@material-ui/core": "^4.4.2",
+		"@material-ui/icons": "^4.4.1",
 		"@types/react": "^16.9.2",
 		"@types/react-dom": "^16.9.0",
+		"@types/react-router-dom": "^4.3.5",
 		"react": "^16.9.0",
-		"react-dom": "^16.9.0"
+		"react-dom": "^16.9.0",
+		"react-router-dom": "^5.0.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
